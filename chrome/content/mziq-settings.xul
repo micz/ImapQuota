@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="mziq-settings.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://imapquota/locale/settings.dtd">
+<prefwindow id="ImapQuota_Settings"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  title="&ImapQuota.SettingsTitle;">
+  <prefpane id="ImapQuota_PrefPane">
+    <preferences>
+    <!-- Thunderbird options for the quota info in the statusbar -->
+      <preference id="ImapQuota.ThresholdShow"
+        name="mail.quota.mainwindow_threshold.show"
+        type="int" />
+      <preference id="ImapQuota.ThresholdWarning"
+        name="mail.quota.mainwindow_threshold.warning"
+        type="int" />
+      <preference id="ImapQuota.ThresholdCritical"
+        name="mail.quota.mainwindow_threshold.critical"
+        type="int" />
+    </preferences>
+    <tabbox>
+      <tabs>
+        <tab label="&ImapQuota.TabSettings.label;"/>
+        <tab label="&ImapQuota.TabInfo.label;"/>
+      </tabs>
+      <tabpanels>
+        <tabpanel id="iqtab" orient="vertical">
+          <label control="symbol" value="&ImapQuota.GlobalDescConvTab;"/>
+          <label control="symbol" value=" "/>
+          <hbox align="center"><textbox id="ImapQuota.ThresholdShow_textfield" maxlength="2" class="mziq-tbox" preference="ImapQuota.ThresholdShow"/>
+	      <label control="symbol" value="&ImapQuota.ThresholdShow.label;"/></hbox>
+          <hbox align="center"><textbox id="ImapQuota.ThresholdWarning_textfield" maxlength="2" class="mziq-tbox" preference="ImapQuota.ThresholdWarning"/>
+          <label control="symbol" value="&ImapQuota.ThresholdWarning.label;"/></hbox>
+          <hbox align="center"><textbox id="ImapQuota.ThresholdCritical_textfield" maxlength="2" class="mziq-tbox" preference="ImapQuota.ThresholdCritical"/>
+          <label control="symbol" value="&ImapQuota.ThresholdCritical.label;"/></hbox>
+        </tabpanel>
+        <tabpanel id="iqtab_info" orient="vertical">
+	  <description style="word-wrap:normal;max-width:500px;">&ImapQuota.InfoMainDesc;</description>
+          <label control="symbol" value=" "/>
+	  <label value="&ImapQuota.DonateLink;" class="text-link mziq-donate" href="http://micz.it/thunderdbird-addon-imapquota-freespace/donate/"/>
+        </tabpanel>
+      </tabpanels>
+    </tabbox>
+  </prefpane>
+</prefwindow>

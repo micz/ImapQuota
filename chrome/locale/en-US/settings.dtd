@@ -1,0 +1,9 @@
+<!ENTITY ImapQuota.SettingsTitle "ImapQuota Settings">
+<!ENTITY ImapQuota.GlobalDescConvTab "Choose here the behaviour.">
+<!ENTITY ImapQuota.TabSettings.label "Settings">
+<!ENTITY ImapQuota.TabInfo.label "Info">
+<!ENTITY ImapQuota.InfoMainDesc "This addon is free and developed in my spare time. If you're using it in your every day routine, feel free to support it with a little donation clicking on the link below. Thanks!!">
+<!ENTITY ImapQuota.DonateLink "Make a donation!">
+<!ENTITY ImapQuota.ThresholdShow.label "ThresholdShow">
+<!ENTITY ImapQuota.ThresholdWarning.label "ThresholdWarning">
+<!ENTITY ImapQuota.ThresholdCritical.label "ThresholdCritical">
