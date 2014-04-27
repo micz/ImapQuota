@@ -5,6 +5,7 @@
  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 <script type="application/x-javascript" src="chrome://imapquota/content/mziq-overlay.js" />
+<script type="application/x-javascript" src="chrome://imapquota/content/mziq-prefobserver.js" />
 
 <stringbundleset id="stringbundleset">
   <stringbundle id="ImapQuota-string-bundle" src="chrome://imapquota/locale/overlay.properties" />

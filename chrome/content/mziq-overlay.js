@@ -21,5 +21,4 @@ var miczImapQuota = {
 
 
 };
-
 window.addEventListener("load", miczImapQuota.init, false);
