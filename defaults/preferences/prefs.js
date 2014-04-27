@@ -1,2 +1,2 @@
-pref("extensions.miczImapQuota.dummy", false);
+pref("extensions.miczImapQuota.firstRun", false);
 
