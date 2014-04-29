@@ -1,5 +1,4 @@
 "use strict";
-var miczImapQuota={};
 /**
  * @constructor
  *
