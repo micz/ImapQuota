@@ -5,4 +5,5 @@ var miczImapQuota = {
   defaultThresholdShow: 75,
   defaultThresholdWarning: 80,
   defaultThresholdCritical: 95,
+
 };

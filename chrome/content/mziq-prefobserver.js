@@ -44,8 +44,17 @@ miczImapQuota.PrefListener.prototype.unregister = function() {
 miczImapQuota.IQListener = new miczImapQuota.PrefListener(
   "mail.quota.mainwindow_threshold.",
   function(branch, name) {
-//dump(">>>>>> PrefListener call: "+name+"\n\r");
-    UpdateStatusQuota(gFolderDisplay.displayedFolder);
+    dump(">>>>>> PrefListener call: "+name+"\n\r");
+    let wm = Components.classes["@mozilla.org/appshell/window-mediator;1"].
+      getService(Components.interfaces.nsIWindowMediator);
+    let enumerator = wm.getEnumerator("mail:3pane");
+    while (enumerator.hasMoreElements()) {
+      let win = enumerator.getNext();
+      if(win.gFolderDisplay){
+        UpdateStatusQuota(win.gFolderDisplay.displayedFolder);
+        dump(">>>>>>>>>>>>>>>>>>>>>>>> DONE!!!");
+      }
+    }
   }
 );
-miczImapQuota.IQListener.register(true);
+miczImapQuota.IQListener.register(false);
