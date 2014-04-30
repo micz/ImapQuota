@@ -4,7 +4,9 @@
 <!DOCTYPE overlay SYSTEM "chrome://imapquota/locale/settings.dtd">
 <prefwindow id="ImapQuota_Settings"
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-  title="&ImapQuota.SettingsTitle;">
+  title="&ImapQuota.SettingsTitle;" onload="miczImapQuotaPref.update_show_check();">
+  <script type="application/x-javascript" src="chrome://ImapQuota/content/mziq-settings.js" />
+  <script type="application/x-javascript" src="chrome://imapquota/content/mziq-overlay.js" />
   <prefpane id="ImapQuota_PrefPane">
     <preferences>
     <!-- Thunderbird options for the quota info in the statusbar -->
@@ -26,9 +28,10 @@
       <tabpanels>
         <tabpanel id="iqtab" orient="vertical">
           <label control="symbol" value="&ImapQuota.GlobalDescSettingTab;"/>
+          <checkbox id="ImapQuota.Show_checkbox" label="&ImapQuota.ThresholdShow0.label;" oncommand="miczImapQuotaPref.update_show_value();"/>
           <label control="symbol" value=" "/>
           <label control="symbol" value="&ImapQuota.HowtoDescSettingTab;"/>
-          <hbox align="center"><textbox id="ImapQuota.ThresholdShow_textfield" maxlength="2" class="mziq-tbox" preference="ImapQuota.ThresholdShow"/>
+          <hbox align="center"><textbox id="ImapQuota.ThresholdShow_textfield" maxlength="2" class="mziq-tbox" preference="ImapQuota.ThresholdShow" oninput="miczImapQuotaPref.update_show_check();"/>
 	        <label control="symbol" value="&ImapQuota.ThresholdShow.label;"/></hbox>
           <hbox align="center"><textbox id="ImapQuota.ThresholdWarning_textfield" maxlength="2" class="mziq-tbox" preference="ImapQuota.ThresholdWarning"/>
           <label control="symbol" value="&ImapQuota.ThresholdWarning.label;"/></hbox>
