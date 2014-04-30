@@ -5,6 +5,7 @@
 <!ENTITY ImapQuota.TabInfo.label "Informazioni">
 <!ENTITY ImapQuota.InfoMainDesc "Questo componente aggiuntivo è sviluppato nel mio tempo libero. Se lo trovi utile, sentiti libero di supportare il suo sviluppo con una piccola donazione, cliccando sul link che trovi qui sotto. Grazie!!">
 <!ENTITY ImapQuota.DonateLink "Fai una donazione!">
-<!ENTITY ImapQuota.ThresholdShow.label "ThresholdShow">
-<!ENTITY ImapQuota.ThresholdWarning.label "ThresholdWarning">
-<!ENTITY ImapQuota.ThresholdCritical.label "ThresholdCritical">
+<!ENTITY ImapQuota.ThresholdShow.label "Valore minimo di occupazione per mostrare la percentuale.">
+<!ENTITY ImapQuota.ThresholdShow0.label "Mostra sempre la percentuale di spazio occupato.">
+<!ENTITY ImapQuota.ThresholdWarning.label "Valore minimo per dare un messaggio di attenzione.">
+<!ENTITY ImapQuota.ThresholdCritical.label "Valore minimo per dare un messaggio di problema critico.">
