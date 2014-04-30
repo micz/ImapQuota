@@ -25,10 +25,11 @@
       </tabs>
       <tabpanels>
         <tabpanel id="iqtab" orient="vertical">
-          <label control="symbol" value="&ImapQuota.GlobalDescConvTab;"/>
+          <label control="symbol" value="&ImapQuota.GlobalDescSettingTab;"/>
           <label control="symbol" value=" "/>
+          <label control="symbol" value="&ImapQuota.HowtoDescSettingTab;"/>
           <hbox align="center"><textbox id="ImapQuota.ThresholdShow_textfield" maxlength="2" class="mziq-tbox" preference="ImapQuota.ThresholdShow"/>
-	      <label control="symbol" value="&ImapQuota.ThresholdShow.label;"/></hbox>
+	        <label control="symbol" value="&ImapQuota.ThresholdShow.label;"/></hbox>
           <hbox align="center"><textbox id="ImapQuota.ThresholdWarning_textfield" maxlength="2" class="mziq-tbox" preference="ImapQuota.ThresholdWarning"/>
           <label control="symbol" value="&ImapQuota.ThresholdWarning.label;"/></hbox>
           <hbox align="center"><textbox id="ImapQuota.ThresholdCritical_textfield" maxlength="2" class="mziq-tbox" preference="ImapQuota.ThresholdCritical"/>
