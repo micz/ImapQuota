@@ -1,6 +1,9 @@
 <!ENTITY ImapQuota.SettingsTitle "Opzioni ImapQuota">
-<!ENTITY ImapQuota.GlobalDescConvTab "Scegli qui il comportamento.">
+<!ENTITY ImapQuota.GlobalDescConvTab "Scegli quando e come visualizzare lo spazio occupato negli account IMAP.">
 <!ENTITY ImapQuota.TabSettings.label "Opzioni">
 <!ENTITY ImapQuota.TabInfo.label "Informazioni">
-<!ENTITY ImapQuota.InfoMainDesc "This addon is free and developed in my spare time. If you're using it in your every day routine, feel free to support it with a little donation clicking on the link below. Thanks!!">
-<!ENTITY ImapQuota.DonateLink "Make a donation!">
+<!ENTITY ImapQuota.InfoMainDesc "Questo componente aggiuntivo è sviluppato nel mio tempo libero. Se lo trovi utile, sentiti libero di supportare il suo sviluppo con una piccola donazione, cliccando sul link che trovi qui sotto. Grazie!!">
+<!ENTITY ImapQuota.DonateLink "Fai una donazione!">
+<!ENTITY ImapQuota.ThresholdShow.label "ThresholdShow">
+<!ENTITY ImapQuota.ThresholdWarning.label "ThresholdWarning">
+<!ENTITY ImapQuota.ThresholdCritical.label "ThresholdCritical">
