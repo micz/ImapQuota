@@ -4,7 +4,7 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>imapquota@micz.it</em:id>
     <em:type>2</em:type>
-    <em:version>1.0</em:version>
+    <em:version>1.1alpha</em:version>
     <em:name>IMAP Quota (Free Space)</em:name>
     <em:description>This addon let you customize the behaiour of the IMAP quota statusbar panel.</em:description>
     <em:creator>Mic (m@micz.it)</em:creator>

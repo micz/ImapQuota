@@ -1,5 +1,8 @@
--= ImapQuota Thunderbird Addon Release Notes =-
+-= IMAP Quota (Free Space) Thunderbird Addon Release Notes =-
 
+==========
+Version 1.1 - ??/??/2014
+- 
 ==========
 Version 1.0 - 30/04/2014
 - First release.
