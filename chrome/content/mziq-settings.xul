@@ -41,7 +41,7 @@
         <tabpanel id="iqtab_info" orient="vertical">
 	  <description style="word-wrap:normal;max-width:500px;">&ImapQuota.InfoMainDesc;</description>
           <label control="symbol" value=" "/>
-	  <label value="&ImapQuota.DonateLink;" class="text-link mziq-donate" href="http://micz.it/thunderdbird-addon-imapquota-freespace/donate/"/>
+	  <label value="&ImapQuota.DonateLink;" class="text-link mziq-donate" href="http://micz.it/thunderdbird-addon-imap-quota-free-space/donate/"/>
         </tabpanel>
       </tabpanels>
     </tabbox>
