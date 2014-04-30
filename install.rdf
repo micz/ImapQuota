@@ -6,7 +6,7 @@
     <em:type>2</em:type>
     <em:version>0.1alpha</em:version>
     <em:name>ImapQuota (Free Space)</em:name>
-    <em:description>_</em:description>
+    <em:description>This addon let you customize the behaiour of the IMAP quota statusbar panel.</em:description>
     <em:creator>Mic (m@micz.it)</em:creator>
     <em:contributor></em:contributor>
     <em:optionsURL>chrome://imapquota/content/mziq-settings.xul</em:optionsURL>
@@ -14,7 +14,7 @@
       <Description>
         <em:locale>it</em:locale>
         <em:name>ImapQuota (Free Space)</em:name>
-        <em:description>_</em:description>
+        <em:description>Questa estensione permette di modificare la visualizzazione della percentuale di spazio occupato quando si usa un account IMAP.</em:description>
         <em:creator>Mic (m@micz.it)</em:creator>
         <em:contributor></em:contributor>
         <em:translator>Mic (m@micz.it)</em:translator>
