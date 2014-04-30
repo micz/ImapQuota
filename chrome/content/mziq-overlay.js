@@ -2,6 +2,7 @@
 var gQuotaUICache;
 var miczImapQuota = {
 
+  baseBranch: "mail.quota.mainwindow_threshold.",
   //Default Thunderbird options
   defaultThresholdShow: 75,
   defaultThresholdWarning: 80,
@@ -20,20 +21,19 @@ var miczImapQuota = {
     folder = folder.QueryInterface(Components.interfaces.nsIMsgImapMailFolder);
 
     // get element references and prefs
-    const miczkBranch = "mail.quota.mainwindow_threshold.";
     if (typeof(gQuotaUICache) != "object")
     {
       gQuotaUICache = new Object();
       gQuotaUICache.meter = document.getElementById("quotaMeter");
       gQuotaUICache.panel = document.getElementById("quotaPanel");
       gQuotaUICache.label = document.getElementById("quotaLabel");
-      gQuotaUICache.showTreshold = Services.prefs.getIntPref(miczkBranch + "show");
-      gQuotaUICache.warningTreshold = Services.prefs.getIntPref(miczkBranch + "warning");
-      gQuotaUICache.criticalTreshold = Services.prefs.getIntPref(miczkBranch + "critical");
+      gQuotaUICache.showTreshold = Services.prefs.getIntPref(this.baseBranch + "show");
+      gQuotaUICache.warningTreshold = Services.prefs.getIntPref(this.baseBranch + "warning");
+      gQuotaUICache.criticalTreshold = Services.prefs.getIntPref(this.baseBranch + "critical");
     }else{  //Reload prefs BEGIN -- Added to the original UpdateStatusQuota version
-      gQuotaUICache.showTreshold = Services.prefs.getIntPref(miczkBranch + "show");
-      gQuotaUICache.warningTreshold = Services.prefs.getIntPref(miczkBranch + "warning");
-      gQuotaUICache.criticalTreshold = Services.prefs.getIntPref(miczkBranch + "critical");
+      gQuotaUICache.showTreshold = Services.prefs.getIntPref(this.baseBranch + "show");
+      gQuotaUICache.warningTreshold = Services.prefs.getIntPref(this.baseBranch + "warning");
+      gQuotaUICache.criticalTreshold = Services.prefs.getIntPref(this.baseBranch + "critical");
     }      //Reload prefs END
 
     var valid = {value: null};

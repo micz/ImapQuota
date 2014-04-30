@@ -42,7 +42,7 @@ miczImapQuota.PrefListener.prototype.unregister = function() {
 
 //Adding preferences listener
 miczImapQuota.IQListener = new miczImapQuota.PrefListener(
-  "mail.quota.mainwindow_threshold.",
+  miczImapQuota.baseBranch,
   function(branch, name) {
     //dump(">>>>>> PrefListener call: "+name+"\n\r");
     let wm = Components.classes["@mozilla.org/appshell/window-mediator;1"].
