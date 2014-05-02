@@ -2,6 +2,7 @@
 
 ==========
 Version 1.1 - ??/??/2014
+- Added Serbian (sr) locale. Thanks to DakSrbija (Babelzilla.org).
 - 
 ==========
 Version 1.0 - 30/04/2014

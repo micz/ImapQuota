@@ -19,6 +19,14 @@
         <em:contributor></em:contributor>
         <em:translator>Mic (m@micz.it)</em:translator>
       </Description>
+      <Description>
+        <em:locale>sr</em:locale>
+        <em:name>IMAP Quota (Free Space)</em:name>
+        <em:description>Омогућава прилагођавање статусне траке са IMAP ограничењима.</em:description>
+        <em:creator>Mic (m@micz.it)</em:creator>
+        <em:contributor></em:contributor>
+        <em:translator>DakSrbija</em:translator>
+      </Description>
     </em:localized>
     <em:targetApplication>
       <Description>
