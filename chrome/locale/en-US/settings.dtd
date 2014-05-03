@@ -1,4 +1,4 @@
-<!ENTITY ImapQuota.SettingsTitle "Imap Quota Settings">
+<!ENTITY ImapQuota.SettingsTitle "IMAP Quota Settings">
 <!ENTITY ImapQuota.GlobalDescSettingTab "Choose here when and how visualize the IMAP quota.">
 <!ENTITY ImapQuota.HowtoDescSettingTab "Insert a number that represents the used quota percentage.">
 <!ENTITY ImapQuota.TabSettings.label "Settings">

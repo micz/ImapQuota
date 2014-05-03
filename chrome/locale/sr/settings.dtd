@@ -1,4 +1,4 @@
-<!ENTITY ImapQuota.SettingsTitle "Imap Quota опције">
+<!ENTITY ImapQuota.SettingsTitle "IMAP Quota опције">
 <!ENTITY ImapQuota.GlobalDescSettingTab "Изаберите како желите да буде приказано IMAP ограничење.">
 <!ENTITY ImapQuota.HowtoDescSettingTab "Унесите број који представља постотак искоришћености ограничења.">
 <!ENTITY ImapQuota.TabSettings.label "Поставке">
