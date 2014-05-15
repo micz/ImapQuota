@@ -7,8 +7,8 @@
     <em:version>1.1alpha</em:version>
     <em:name>IMAP Quota (Free Space)</em:name>
     <em:description>This addon let you customize the behaiour of the IMAP quota statusbar panel.</em:description>
-    <em:iconURL>chrome://imapquota/skin/icon.png</em:iconURL>
-    <em:icon64URL>chrome://imapquota/skin/icon64.png</em:icon64URL>
+    <em:iconURL>chrome://imapquota/skin/mziq-icon.png</em:iconURL>
+    <em:icon64URL>chrome://imapquota/skin/mziq-icon64.png</em:icon64URL>
     <em:creator>Mic (m@micz.it)</em:creator>
     <em:contributor></em:contributor>
     <em:optionsURL>chrome://imapquota/content/mziq-settings.xul</em:optionsURL>
