@@ -3,4 +3,6 @@ locale    imapquota   en-US         chrome/locale/en-US/
 locale    imapquota   it            chrome/locale/it/
 locale    imapquota   sr            chrome/locale/sr/
 
+skin imapquota default chrome/skin/
+
 overlay chrome://messenger/content/messenger.xul chrome://imapquota/content/mziq-overlay.xul
