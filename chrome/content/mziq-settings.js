@@ -23,7 +23,9 @@ var miczImapQuotaPref = {
     let t_msg=strbundle.getString("promptTitle");
   
     let promptService = Components.classes["@mozilla.org/embedcomp/prompt-service;1"].getService(Components.interfaces.nsIPromptService);
-    if(!promptService.confirm(null,t_msg,p_msg_c))return;
+    if(!promptService.confirm(null,t_msg,p_msg_c)){
+      return;
+    }
     
     let prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
     prefs = prefs.getBranch(miczImapQuota.baseBranch);
