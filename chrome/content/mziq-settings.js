@@ -18,9 +18,11 @@ var miczImapQuotaPref = {
   },
   
   set_default_values: function(){
-    var promptService = Components.classes["@mozilla.org/embedcomp/prompt-service;1"].getService(Components.interfaces.nsIPromptService);
-    let t_msg="Are you sure?";
-    let p_msg_c="Do you want to set alle the values to the default ones?";
+    let strbundle = document.getElementById("ImapQuota-string-bundle_settings");
+    let p_msg_c=strbundle.getString("promptMessage");
+    let t_msg=strbundle.getString("promptTitle");
+  
+    let promptService = Components.classes["@mozilla.org/embedcomp/prompt-service;1"].getService(Components.interfaces.nsIPromptService);
     if(!promptService.confirm(null,t_msg,p_msg_c))return;
     
     let prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
