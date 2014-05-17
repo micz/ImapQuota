@@ -37,6 +37,7 @@
           <label control="symbol" value="&ImapQuota.ThresholdWarning.label;"/></hbox>
           <hbox align="center"><textbox id="ImapQuota.ThresholdCritical_textfield" maxlength="2" class="mziq-tbox" preference="ImapQuota.ThresholdCritical"/>
           <label control="symbol" value="&ImapQuota.ThresholdCritical.label;"/></hbox>
+          <button label="&ImapQuota.DefaultBtn.label;" oncommand="miczImapQuotaPref.set_default_values();" style="min-width:10px;"/>
         </tabpanel>
         <tabpanel id="iqtab_info" orient="vertical">
 	  <description style="word-wrap:normal;max-width:500px;">&ImapQuota.InfoMainDesc;</description>
