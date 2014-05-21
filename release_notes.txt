@@ -3,8 +3,10 @@
 ==========
 Version 1.1 - ??/??/2014
 - Added Serbian (sr) locale. Thanks to DakSrbija (Babelzilla.org).
-- Icon embedded.
+- Embedded the addon icon.
+- Added a button to set all the values to the default ones.
 - Added French (fr) locale. Thanks to vono (Babelzilla.org).
+- 
 ==========
 Version 1.0 - 30/04/2014
 - First release.

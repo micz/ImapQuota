@@ -7,6 +7,9 @@
   title="&ImapQuota.SettingsTitle;" onload="miczImapQuotaPref.update_show_check();">
   <script type="application/x-javascript" src="chrome://ImapQuota/content/mziq-settings.js" />
   <script type="application/x-javascript" src="chrome://imapquota/content/mziq-overlay.js" />
+  <stringbundleset id="stringbundleset_settings">
+    <stringbundle id="ImapQuota-string-bundle_settings" src="chrome://imapquota/locale/settings.properties" />
+  </stringbundleset>
   <prefpane id="ImapQuota_PrefPane">
     <preferences>
     <!-- Thunderbird options for the quota info in the statusbar -->
@@ -37,6 +40,7 @@
           <label control="symbol" value="&ImapQuota.ThresholdWarning.label;"/></hbox>
           <hbox align="center"><textbox id="ImapQuota.ThresholdCritical_textfield" maxlength="2" class="mziq-tbox" preference="ImapQuota.ThresholdCritical"/>
           <label control="symbol" value="&ImapQuota.ThresholdCritical.label;"/></hbox>
+          <button label="&ImapQuota.DefaultBtn.label;" oncommand="miczImapQuotaPref.set_default_values();" style="min-width:10px;"/>
         </tabpanel>
         <tabpanel id="iqtab_info" orient="vertical">
 	  <description style="word-wrap:normal;max-width:500px;">&ImapQuota.InfoMainDesc;</description>

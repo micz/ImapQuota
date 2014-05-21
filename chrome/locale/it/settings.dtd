@@ -9,3 +9,4 @@
 <!ENTITY ImapQuota.ThresholdShow0.label "Mostra sempre la percentuale di spazio occupato.">
 <!ENTITY ImapQuota.ThresholdWarning.label "Valore minimo per dare un messaggio di attenzione.">
 <!ENTITY ImapQuota.ThresholdCritical.label "Valore minimo per dare un messaggio di problema critico.">
+<!ENTITY ImapQuota.DefaultBtn.label "Imposta i valori di default">
