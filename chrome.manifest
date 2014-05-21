@@ -2,6 +2,7 @@ content   imapquota                 chrome/content/
 locale    imapquota   en-US         chrome/locale/en-US/
 locale    imapquota   it            chrome/locale/it/
 locale    imapquota   sr            chrome/locale/sr/
+locale    imapquota   fr            chrome/locale/fr/
 
 skin imapquota default chrome/skin/
 

@@ -29,6 +29,14 @@
         <em:contributor></em:contributor>
         <em:translator>DakSrbija</em:translator>
       </Description>
+      <Description>
+        <em:locale>fr</em:locale>
+        <em:name>IMAP Quota (Free Space)</em:name>
+        <em:description>Ce module vous permet de personnaliser le comportement du panneau des quotas IMAP dans la barre d'états.</em:description>
+        <em:creator>Mic (m@micz.it)</em:creator>
+        <em:contributor></em:contributor>
+        <em:translator>vono</em:translator>
+      </Description>
     </em:localized>
     <em:targetApplication>
       <Description>
