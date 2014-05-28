@@ -9,4 +9,3 @@
 <!ENTITY ImapQuota.ThresholdShow0.label "Увек приказуј статусну траку">
 <!ENTITY ImapQuota.ThresholdWarning.label "Најмање ограничење након ког се приказује упозорење.">
 <!ENTITY ImapQuota.ThresholdCritical.label "Најмање ограничење након ког се приказује критично стање.">
-<!ENTITY ImapQuota.DefaultBtn.label "Set default values">
