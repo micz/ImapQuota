@@ -1,8 +1,8 @@
 -= IMAP Quota (Free Space) Thunderbird Addon Release Notes =-
 
 ==========
-Version 1.2 - ??/??/2014
-- 
+Version 1.1.2 - 07/06/2014
+- Serbian (sr) locale updated. Thanks to DakSrbija (Babelzilla.org).
 ==========
 Version 1.1.1 - 06/06/2014
 - Fixed a bug using the "set to default" button that doesn't correctly update the "always show" setting checkbox.
