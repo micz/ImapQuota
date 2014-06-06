@@ -34,7 +34,8 @@ var miczImapQuotaPref = {
     document.getElementById("ImapQuota.ThresholdWarning_textfield").value=miczImapQuota.defaultThresholdWarning;
     prefs.setIntPref("warning",miczImapQuota.defaultThresholdWarning);
     document.getElementById("ImapQuota.ThresholdCritical_textfield").value=miczImapQuota.defaultThresholdCritical;
-    prefs.setIntPref("critical",miczImapQuota.defaultThresholdCritical);    
+    prefs.setIntPref("critical",miczImapQuota.defaultThresholdCritical);
+    miczImapQuotaPref.update_show_check();
   },
 
 };
