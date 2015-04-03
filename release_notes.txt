@@ -3,6 +3,7 @@
 ==========
 Version 1.2 - ??/??/2014
 - Chinese Simplified (zh-CN) added, thanks to yfdyh000 (Babelzilla.org).
+- German (de) translation added, thanks Mauri (from BabelZilla.org).
 - 
 ==========
 Version 1.1.2 - 07/06/2014

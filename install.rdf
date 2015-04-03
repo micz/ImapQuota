@@ -38,6 +38,14 @@
         <em:translator>vono</em:translator>
       </Description>
       <Description>
+        <em:locale>de</em:locale>
+        <em:name>IMAP Quota (Free Space)</em:name>
+        <em:description>Dieses AddOn lässt Sie das Verhalten des IMAP Kontingentgrenzen-Statusleiste-Panels anpassen.</em:description>
+        <em:creator>Mic (m@micz.it)</em:creator>
+        <em:contributor></em:contributor>
+        <em:translator>Mauri</em:translator>
+      </Description>
+      <Description>
         <em:locale>zh-CN</em:locale>
         <em:name>IMAP Quota (Free Space)</em:name>
         <em:description>本附加组件让您能定制 IMAP 配额状态栏面板的表现。</em:description>
