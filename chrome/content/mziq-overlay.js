@@ -1,4 +1,6 @@
 "use strict";
+Components.utils.import("chrome://imapquota/content/mziq-utils.jsm");
+
 var gQuotaUICache;
 var miczImapQuota = {
 
@@ -8,7 +10,7 @@ var miczImapQuota = {
   defaultThresholdWarning: 80,
   defaultThresholdCritical: 95,
 
-  //The UpdateStatusQuota function is derived from http://mxr.mozilla.org/comm-central/source/mail/base/content/commandglue.js#125
+  //The UpdateStatusQuota function is derived from http://dxr.mozilla.org/comm-central/source/mail/base/content/commandglue.js#125
   UpdateStatusQuota: function(document,folder)
   {
     if (!(folder && // no folder selected
@@ -36,16 +38,16 @@ var miczImapQuota = {
       gQuotaUICache.criticalTreshold = Services.prefs.getIntPref(this.baseBranch + "critical");
     }      //Reload prefs END
 
-    var valid = {value: null};
-    var used = {value: null};
-    var max = {value: null};
+    let valid = {value: null};
+    let used = {value: null};
+    let max = {value: null};
     try {
       // get data from backend
       folder.getQuota(valid, used, max);
     } catch (e) { dump(e + "\n"); }
     if (valid.value && max.value > 0)
     {
-      var percent = Math.round(used.value / max.value * 100);
+      let percent = Math.round(used.value / max.value * 100);
 
       // show in UI
       if (percent < gQuotaUICache.showTreshold)
@@ -56,10 +58,10 @@ var miczImapQuota = {
         gQuotaUICache.meter.setAttribute("value", percent);
              // do not use value property, because that is imprecise (3%)
              // for optimization that we don't need here
-        var bundle = document.getElementById("bundle_messenger");
-        var label = bundle.getFormattedString("percent", [percent]);
-        var tooltip = bundle.getFormattedString("quotaTooltip",
-                                                [used.value, max.value]);
+        let bundle = document.getElementById("bundle_messenger");
+        let label = bundle.getFormattedString("percent", [percent]);
+        let tooltip = bundle.getFormattedString("quotaTooltip",[used.value,max.value]);
+                                                //[miczImapQuotaUtils.formatBytes(used.value), miczImapQuotaUtils.formatBytes(max.value)]);
         gQuotaUICache.label.value = label;
         gQuotaUICache.label.tooltipText = tooltip;
         if (percent < gQuotaUICache.warningTreshold)
