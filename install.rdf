@@ -6,7 +6,7 @@
     <em:type>2</em:type>
     <em:version>1.2alpha</em:version>
     <em:name>IMAP Quota (Free Space)</em:name>
-    <em:description>This addon let you customize the behaiour of the IMAP quota statusbar panel.</em:description>
+    <em:description>This addon lets you customize the IMAP quota statusbar panel</em:description>
     <em:iconURL>chrome://imapquota/skin/mziq-icon.png</em:iconURL>
     <em:icon64URL>chrome://imapquota/skin/mziq-icon64.png</em:icon64URL>
     <em:creator>Mic (m@micz.it)</em:creator>
@@ -58,7 +58,7 @@
       <Description>
         <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id> <!-- Thunderbird -->
         <em:minVersion>21.0</em:minVersion>
-        <em:maxVersion>31.*</em:maxVersion>
+        <em:maxVersion>60.*</em:maxVersion>
       </Description>
     </em:targetApplication>
   </Description>
