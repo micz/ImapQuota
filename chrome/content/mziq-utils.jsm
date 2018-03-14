@@ -12,7 +12,7 @@ var miczImapQuotaUtils = {
 		   }
 		   let k = 1024;
 		   let dm = decimals || 2;
-		   let sizes = ['bytes', 'KB', 'MB', 'GB'];
+		   let sizes = ['bytes', 'kB', 'MB', 'GB'];
 		   let i = Math.floor(Math.log(bytes) / Math.log(k));
 		   return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + miczImapQuotaUtils._bundleIQ.GetStringFromName("ImapQuota."+sizes[i]);
 	},
