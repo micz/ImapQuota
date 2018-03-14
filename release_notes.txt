@@ -4,6 +4,7 @@
 Version 1.2 - ??/??/2018
 - Chinese Simplified (zh-CN) added, thanks to yfdyh000 (Babelzilla.org).
 - German (de) translation added, thanks Mauri (from BabelZilla.org).
+- Added compatibility with Thunderbird 59+.
 - 
 ==========
 Version 1.1.2 - 07/06/2014
