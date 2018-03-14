@@ -11,6 +11,7 @@ var miczImapQuota = {
   defaultThresholdCritical: 95,
   
   init: function() {
+    miczImapQuotaUtils.setStringBundle();
     window.addEventListener(
       "MailViewChanged",
       function(aEvent){miczImapQuota.updateDisplay(aEvent);});
@@ -72,17 +73,13 @@ var miczImapQuota = {
         gQuotaUICache.panel.hidden = true;
       else
       {
-        let strBundleIQ= Components.classes["@mozilla.org/intl/stringbundle;1"].getService(Components.interfaces.nsIStringBundleService);
-        let _bundleIQ = strBundleIQ.createBundle("chrome://imapquota/locale/overlay.properties");
         gQuotaUICache.panel.hidden = false;
         gQuotaUICache.meter.setAttribute("value", percent);
              // do not use value property, because that is imprecise (3%)
              // for optimization that we don't need here
         let bundle = document.getElementById("bundle_messenger");
         let label = bundle.getFormattedString("percent", [percent]);
-        let tooltip = _bundleIQ.formatStringFromName("ImapQuota.quotaTooltip",
-                                                //[used.value,max.value]);
-                                                [miczImapQuotaUtils.formatBytes(used.value), miczImapQuotaUtils.formatBytes(max.value)],2);
+        let tooltip = miczImapQuotaUtils._bundleIQ.formatStringFromName("ImapQuota.quotaTooltip",[miczImapQuotaUtils.formatBytes(used.value), miczImapQuotaUtils.formatBytes(max.value)],2);
         gQuotaUICache.label.value = label;
         gQuotaUICache.label.tooltipText = tooltip;
         if (percent < gQuotaUICache.warningTreshold)
