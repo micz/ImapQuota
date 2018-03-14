@@ -2,7 +2,6 @@
 
 let EXPORTED_SYMBOLS = ["miczImapQuotaUtils"];
 
-
 var miczImapQuotaUtils = {
 
 	formatBytes: function(bytes,decimals) {

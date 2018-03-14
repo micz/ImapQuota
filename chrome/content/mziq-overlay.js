@@ -9,6 +9,24 @@ var miczImapQuota = {
   defaultThresholdShow: 75,
   defaultThresholdWarning: 80,
   defaultThresholdCritical: 95,
+  
+  init: function() {
+    window.addEventListener(
+      "MailViewChanged",
+      function(aEvent){miczImapQuota.updateDisplay(aEvent);});
+  },
+  
+  updateDisplay: function(aEvent){
+    let wm = Components.classes["@mozilla.org/appshell/window-mediator;1"].
+      getService(Components.interfaces.nsIWindowMediator);
+    let enumerator = wm.getEnumerator("mail:3pane");
+    while (enumerator.hasMoreElements()) {
+      let win = enumerator.getNext();
+      if(win.gFolderDisplay){
+        miczImapQuota.UpdateStatusQuota(win.document,win.gFolderDisplay.displayedFolder);
+      }
+    }
+  },
 
   //The UpdateStatusQuota function is derived from http://dxr.mozilla.org/comm-central/source/mail/base/content/commandglue.js#125
   UpdateStatusQuota: function(document,folder)
@@ -54,14 +72,17 @@ var miczImapQuota = {
         gQuotaUICache.panel.hidden = true;
       else
       {
+        let strBundleIQ= Components.classes["@mozilla.org/intl/stringbundle;1"].getService(Components.interfaces.nsIStringBundleService);
+        let _bundleIQ = strBundleIQ.createBundle("chrome://imapquota/locale/overlay.properties");
         gQuotaUICache.panel.hidden = false;
         gQuotaUICache.meter.setAttribute("value", percent);
              // do not use value property, because that is imprecise (3%)
              // for optimization that we don't need here
         let bundle = document.getElementById("bundle_messenger");
         let label = bundle.getFormattedString("percent", [percent]);
-        let tooltip = bundle.getFormattedString("quotaTooltip",[used.value,max.value]);
-                                                //[miczImapQuotaUtils.formatBytes(used.value), miczImapQuotaUtils.formatBytes(max.value)]);
+        let tooltip = _bundleIQ.formatStringFromName("ImapQuota.quotaTooltip",
+                                                //[used.value,max.value]);
+                                                [miczImapQuotaUtils.formatBytes(used.value), miczImapQuotaUtils.formatBytes(max.value)],2);
         gQuotaUICache.label.value = label;
         gQuotaUICache.label.tooltipText = tooltip;
         if (percent < gQuotaUICache.warningTreshold)
@@ -77,3 +98,5 @@ var miczImapQuota = {
   }
 
 };
+
+window.addEventListener("load", miczImapQuota.init, false);
