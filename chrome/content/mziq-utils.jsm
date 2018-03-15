@@ -17,6 +17,10 @@ var miczImapQuotaUtils = {
 		   return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + miczImapQuotaUtils._bundleIQ.GetStringFromName("ImapQuota."+sizes[i]);
 	},
 	
+	formatKB: function(bytes,decimals) {
+      return this.formatBytes(bytes*1024,decimals);
+	},
+	
 	setStringBundle:function(){
      let strBundleIQ= Components.classes["@mozilla.org/intl/stringbundle;1"].getService(Components.interfaces.nsIStringBundleService);
      miczImapQuotaUtils._bundleIQ = strBundleIQ.createBundle("chrome://imapquota/locale/overlay.properties");

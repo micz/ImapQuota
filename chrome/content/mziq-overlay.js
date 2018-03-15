@@ -75,11 +75,11 @@ var miczImapQuota = {
       {
         gQuotaUICache.panel.hidden = false;
         gQuotaUICache.meter.setAttribute("value", percent);
-             // do not use value property, because that is imprecise (3%)
-             // for optimization that we don't need here
+       // do not use value property, because that is imprecise (3%)
+       // for optimization that we don't need here
         let bundle = document.getElementById("bundle_messenger");
         let label = bundle.getFormattedString("percent", [percent]);
-        let tooltip = miczImapQuotaUtils._bundleIQ.formatStringFromName("ImapQuota.quotaTooltip",[miczImapQuotaUtils.formatBytes(used.value,2), miczImapQuotaUtils.formatBytes(max.value,2)],2);
+        let tooltip = miczImapQuotaUtils._bundleIQ.formatStringFromName("ImapQuota.quotaTooltip",[miczImapQuotaUtils.formatKB(used.value,2), miczImapQuotaUtils.formatKB(max.value,2)],2);
         gQuotaUICache.label.value = label;
         gQuotaUICache.label.tooltipText = tooltip;
         if (percent < gQuotaUICache.warningTreshold)
