@@ -1,13 +1,12 @@
 -= IMAP Quota (Free Space) Thunderbird Addon Release Notes =-
 
 ==========
-Version 1.2 - ??/??/2018
+Version 1.2 - 15/03/2018
 - Chinese Simplified (zh-CN) added, thanks to yfdyh000 (Babelzilla.org).
 - German (de) translation added, thanks Mauri (from BabelZilla.org).
 - Added compatibility with Thunderbird 59+.
 - No more using only kB as unit for used and available server space. now the correct unit is automatically chosen.
 - All locales updated.
-- 
 ==========
 Version 1.1.2 - 07/06/2014
 - Serbian (sr) locale updated. Thanks to DakSrbija (Babelzilla.org).
