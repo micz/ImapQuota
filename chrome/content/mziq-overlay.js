@@ -24,13 +24,13 @@ var miczImapQuota = {
     while (enumerator.hasMoreElements()) {
       let win = enumerator.getNext();
       if(win.gFolderDisplay){
-        miczImapQuota.UpdateStatusQuota(win.document,win.gFolderDisplay.displayedFolder);
+        miczImapQuota.updateStatusQuota(win.document,win.gFolderDisplay.displayedFolder);
       }
     }
   },
 
-  //The UpdateStatusQuota function is derived from http://dxr.mozilla.org/comm-central/source/mail/base/content/commandglue.js#125
-  UpdateStatusQuota: function(document,folder)
+  //The updateStatusQuota function is derived from http://dxr.mozilla.org/comm-central/source/mail/base/content/commandglue.js#125
+  updateStatusQuota: function(document,folder)
   {
     if (!(folder && // no folder selected
           folder instanceof Components.interfaces.nsIMsgImapMailFolder)) // POP etc.
@@ -51,7 +51,7 @@ var miczImapQuota = {
       gQuotaUICache.showTreshold = Services.prefs.getIntPref(this.baseBranch + "show");
       gQuotaUICache.warningTreshold = Services.prefs.getIntPref(this.baseBranch + "warning");
       gQuotaUICache.criticalTreshold = Services.prefs.getIntPref(this.baseBranch + "critical");
-    }else{  //Reload prefs BEGIN -- Added to the original UpdateStatusQuota version
+    }else{  //Reload prefs BEGIN -- Added to the original updateStatusQuota version
       gQuotaUICache.showTreshold = Services.prefs.getIntPref(this.baseBranch + "show");
       gQuotaUICache.warningTreshold = Services.prefs.getIntPref(this.baseBranch + "warning");
       gQuotaUICache.criticalTreshold = Services.prefs.getIntPref(this.baseBranch + "critical");

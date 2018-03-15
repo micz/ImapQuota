@@ -51,7 +51,7 @@ miczImapQuota.IQListener = new miczImapQuota.PrefListener(
     while (enumerator.hasMoreElements()) {
       let win = enumerator.getNext();
       if(win.gFolderDisplay){
-        miczImapQuota.UpdateStatusQuota(win.document,win.gFolderDisplay.displayedFolder);
+        miczImapQuota.updateStatusQuota(win.document,win.gFolderDisplay.displayedFolder);
         //dump(">>>>>>>>>>>>>>>>>>>>>>>> DONE!!!\n\r");
       }
     }
